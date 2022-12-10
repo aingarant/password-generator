@@ -1,34 +1,29 @@
-*, html
-{
-
+*,
+html {
   border: 0;
   padding: 0;
   margin: 0;
 }
 
-body
-{
-  background-color: bisque;
+body {
   font-size: 32px;
-  font-family: 'Martian Mono', monospace;
-
+  font-family: "Martian Mono", monospace;
+  background-color: lightgreen;
 }
 
-a{
+a {
   color: #000;
+  padding: 2px;
 }
 
-a:hover
-{
-  color: bisque
-}
-div
-{
-  padding: 25px;
+a:hover {
+  color: white;
+  background-color: #000;
+  padding: 2px;
 }
 
-.container
-{
+.container {
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,67 +31,64 @@ div
   text-align: center;
   min-height: 100vh;
   width: 100%;
-  background-color: lightgreen;
 }
 
-h1
-{
+h1 {
+  margin-top: 50px;
   margin-bottom: 25px;
+
   font-size: 2em;
 }
-button
-{
-  font-size:.8em;
+button {
+  font-size: 0.8em;
   padding: 10px 25px 10px 25px;
   border-radius: 10px;
 }
 
-button:hover
-{
+button:hover {
   background-color: bisque;
 }
 
-.password-div
-{
+.password-div {
   width: 75%;
-margin: auto;
+  margin: auto;
 }
-.password
-{
+.password {
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   font-size: 2em;
   background: #efefef;
   width: 100%;
 }
 
-#pwlength
-{
+#pwlength {
   font-weight: 800;
   color: black;
   background-color: bisque;
   padding: 5px;
 }
 
-.checkbox
+.checkbox-div, .slider-div, .button-div
 {
+  padding: 25px;
+}
+
+.checkbox {
   font-size: 2em;
   height: 25px;
   width: 25px;
 }
 
-.length
-{
+.length {
   width: 600px;
 }
 
-footer
-{
+footer {
   margin-top: 200px;
-  font-size: .5em;
+  margin-bottom: 25px;
+  font-size: 0.5em;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -108,8 +100,8 @@ footer
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -120,4 +112,3 @@ footer
   padding: 25px;
   width: 50%; /* Could be more or less, depending on screen size */
 }
-

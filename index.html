@@ -30,17 +30,19 @@
     </div>
 
 
-    <div>
+    <div class="slider-div">
       <p>Password Length <span id="pwlength">16</span></p>
       <input type="range" min="8" max="32" value="16" class="length" id="length" onchange="sliding()">
     </div>
-    <div>
+
+    <div class="checkbox-div">
       <input type="checkbox" class="checkbox" checked id="lowercase">a-z</input>
       <input type="checkbox" class="checkbox" checked id="caps">A-Z</input>
       <input type="checkbox" class="checkbox" checked id="numbers">0-9</input>
       <input type="checkbox" class="checkbox" checked id="special">!@#$%</input>
     </div>
-    <div>
+
+    <div class="button-div">
       <button onclick="pressed()">Generate Password</button>
       <button onclick="copyPassword()">Copy Password</button>
     </div>
