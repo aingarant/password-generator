@@ -68,6 +68,11 @@ button
   width: 600px;
 }
 
+footer
+{
+  margin-top: 200px;
+  font-size: .5em;
+}
 
 
 /* The Modal (background) */

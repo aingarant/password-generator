@@ -26,25 +26,20 @@ const pressed = () => {
 
   if (special) {
     chars += "!@#$%^&*()"
-
   }
 
   if (!chars) {
     chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
   }
 
-
-  var charactersLength = chars.length;
-  for (var i = 0; i < length; i++) {
+  let charactersLength = chars.length;
+  for (let i = 0; i < length; i++) {
     randomPassword += chars.charAt(Math.floor(Math.random() * charactersLength));
 
   }
   document.querySelector("#password").value = randomPassword;
   return randomPassword;
-
-
 }
-
 
 const copyPassword = () => {
   let passwordField = document.querySelector("#password")
@@ -69,9 +64,3 @@ const copyPassword = () => {
     }
   }
 }
-
-
-
-
-
-
