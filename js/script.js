@@ -55,4 +55,26 @@ const copyPassword = () => {
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(passwordField.value);
+  const modal = document.querySelector(".modal");
+  modal.style.display = "block";
+
+  const modalContent = document.querySelector(".modal-content");
+
+
+  modalContent.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
+}
+
+
+
+
+
+
