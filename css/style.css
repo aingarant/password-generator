@@ -69,8 +69,9 @@ button:hover {
   padding: 5px;
 }
 
-.checkbox-div, .slider-div, .button-div
-{
+.checkbox-div,
+.slider-div,
+.button-div {
   padding: 25px;
 }
 
@@ -81,7 +82,7 @@ button:hover {
 }
 
 .length {
-  width: 600px;
+  width: 100%;
 }
 
 footer {
@@ -111,4 +112,11 @@ footer {
   margin: 20% auto; /* 15% from the top and centered */
   padding: 25px;
   width: 50%; /* Could be more or less, depending on screen size */
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: bisque;
+    font-size: 16px;
+  }
 }
